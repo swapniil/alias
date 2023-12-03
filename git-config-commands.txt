@@ -1,0 +1,19 @@
+# This file contains the commands handy to config your git usage environment
+# This will help you quickly get start with git and fetch the code
+# specify the Username and User-Mail at start and source this file 
+#   for one time only
+
+USERNAME="swapnil"
+USERMAIL=user9750@.mymailcom
+
+git config --global diff.tool vimdiff
+git config --global difftool.prompt false
+git config --global alias.d difftool
+git config --global alias.s status
+git config --global alias.b branch
+git config --global user.email $USERMAIL
+git config --global user.name $USERNAME
+git config --global pull.rebase true
+git config --global credential.helper store
+
+
